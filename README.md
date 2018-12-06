@@ -45,15 +45,18 @@ NuGet package is already listed in tests/packages.config, so once you attempt to
 the SEALTest project (tests/SEALTest.vcxproj) from SEAL.sln Visual Studio will 
 automatically download and install it for you.
 
-## Linux and OS X
+## Linux, OS X and FreeBSD
 
-SEAL is very easy to configure and build in Linux and OS X using CMake (>= 3.10). 
+SEAL is very easy to configure and build in Linux, OS X and FreeBSD using CMake (>= 3.10).
 A modern version of GNU G++ (>= 6.0) or Clang++ (>= 5.0) is needed. In OS X the 
 Xcode toolchain (>= 9.3) will work.
 
 In OS X you will need CMake with command line tools. For this, you can either 
 1. install the cmake package with [Homebrew](https://brew.sh), or
 2. download CMake directly from [https://cmake.org/download](https://cmake.org/download) and [enable command line tools](https://stackoverflow.com/questions/30668601/installing-cmake-command-line-tools-on-a-mac).
+
+In FreeBSD you can directly install SEAL from ports [security/seal](https://www.freshports.org/security/seal/)
+or build by CMake port [devel/cmake](https://www.freshports.org/devel/cmake/).
 
 Below we give instructions for how to configure, build, and install SEAL either 
 system-wide (global install), or for a single user (local install). A system-wide
